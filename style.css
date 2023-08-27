@@ -1,9 +1,48 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./res/font/roboto.ttf') format('truetype');
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
 }
+.container {
+    position: relative;
+    background-image: url('./res/img/bgk-header.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Add other styling here */
+}
+.navlogowrap {
+    display: flex;
+    align-items: center; /* TODO Change this to be in the middle */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
+.navlogowrap img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+#gradient-text {
+    font-family: 'Roboto';
+    background: linear-gradient(to right, #00e0d0, #4aa3cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+nav {
+border: solid 2px green;
+}
+header {
+border: solid 2px orange;
+}
 body {
     min-height: 100vh;
 }
