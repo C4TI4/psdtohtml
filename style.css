@@ -8,8 +8,140 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 480px) {
+
+
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
-@media (max-width: 768px) {
+.contact-details {
+    text-align: left;
 }
+
+.contact-form h2,
+.happy-customers h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.happy-customers {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client-logos img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brand-info {
+    flex: 1;
+    text-align: left;
+}
+
+.brand-info img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+.our-studio {
+    flex: 1;
+    text-align: left;
+}
+
+.stay-in-touch {
+    flex: 1;
+    text-align: left;
+}
+
+.stay-in-touch button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.stay-in-touch .social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stay-in-touch .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {}
