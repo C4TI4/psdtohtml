@@ -1,9 +1,66 @@
+@font-face {
+    font-family: 'Roboto'; /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
+    src: url('./res/font/roboto.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PlayfairDisplay Regular'; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
+    src: url('./res/font/playfairdisplay-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PlayfairDisplay Black'; /* For header heading */
+    src: url('./res/font/playfairdisplay-black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PlayfairDisplay Bold'; /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
+    src: url('./res/font/playfairdisplay-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HammersmithOne'; /* For button text */
+    src: url('./res/font/hammersmithone-regular.ttf') format('truetype');
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
 }
+.container {
+    position: relative;
+    background-image: url('./res/img/bgk-header.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Add other styling here */
+}
+.navlogowrap {
+    display: flex;
+    align-items: center; /* TODO Change this to be in the middle */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
+.navlogowrap img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+#gradient-text {
+    font-family: 'Roboto';
+    background: linear-gradient(to right, #00e0d0, #4aa3cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+nav {
+border: solid 2px green;
+}
+header {
+border: solid 2px orange;
+text-align: center;
+color: white;
+}
 body {
     min-height: 100vh;
 }
