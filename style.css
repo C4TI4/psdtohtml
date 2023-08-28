@@ -22,30 +22,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
+    
 }
-.container {
-    position: relative;
+.navcontainer {
     background-image: url('./res/img/bgk-header.png');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    /* Add other styling here */
 }
 .navlogowrap {
     display: flex;
     align-items: center; /* TODO Change this to be in the middle */
     position: fixed;
-    top: 0;
-    left: 0;
+    border: solid 2px cyan;
 }
 
 .navlogowrap img {
     max-width: 100px;
     margin-right: 10px;
 }
-
-#gradient-text {
+.navlinkwrap {
+    display:inline;
+    border: solid 2px magenta;
+}
+#nav-gradient-text {
     font-family: 'Roboto';
+    font-size: 2.5em;
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
     background-clip: text;
@@ -54,12 +56,37 @@
     padding-left: 20px;
 }
 nav {
-border: solid 2px green;
+    font-family: 'Roboto';
+    border: solid 2px green;
+    display: flex;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.08em; /* 13pt */
 }
 header {
-border: solid 2px orange;
-text-align: center;
-color: white;
+    border: solid 2px orange;
+    text-align: center;
+    color: white;
+}
+header p {
+    font-family: 'Roboto';
+    font-size: 1.16em; /* 14pt */
+}
+header h1 {
+    font-family: 'PlayfairDisplay Black';
+    font-size: 2em;
+}
+header button {
+    font-family: 'HammersmithOne';
+    font-size: 1em;
+    color: #26dfce;
+    background-color: transparent;
+    border: solid 1px #26dfce;
+    border-radius: 3px;
+    padding: 1%;
 }
 body {
     min-height: 100vh;
