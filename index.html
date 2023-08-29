@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home | tajam</title>
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="icon" href="./res/img/favicon.ico" />
-    </head>
-    <body>
-        <!-- Giving Mochi his comment line back for readability -->
-        <div class="navcontainer">
-            <nav id="navtop">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | tajam</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./res/img/favicon.ico" />
+  </head>
+  <body>
+    <div class="navcontainer">
+        <nav id="navtop">
+            <div class="navcontent">
                 <div class="navlogowrap">
-                    <img
-                        src="./res/img/svg/logo.svg"
-                        alt="tajam corporate logo"
-                    />
+                    <img src="./res/img/svg/logo.svg" alt="tajam corporate logo">
                     <p id="nav-gradient-text">tajam</p>
                 </div>
                 <div class="navlinkwrap">
-                    <a href="#">HOME</a>
+                    <a href="#" id="navcurrent">HOME</a>
                     <a href="#">ABOUT</a>
-                    <a href="#">EXPERTISE</a>
-                    <a href="#">TEAMS</a>
+                    <a href="#expertise">EXPERTISE</a>
+                    <a href="#team">TEAMS</a>
                     <a href="#">WORKS</a>
                     <a href="#">PEOPLE SAY</a>
                     <a href="#">CONTACT</a>
                 </div>
-            </nav>
+            </div>
+        </nav>
             <header id="headertop">
-                <h1>We Are An Awesome Creative Agency</h1>
-                <p>
-                    At tajam, we believe in our client's vision and our
-                    employees' ability to conjure that vision into reality. Sit
-                    back and relax as our creative wizards ensure that every
-                    blippo is the way you want and every glorbo is accounted
-                    for. At tajam, we <i>believe</i> in our client's vision.
-                </p>
-                <button>LEARN MORE</button>
-            </header>
-        </div>
-        <main>
-            <!--Our Story and Watch our Story-Kimberly  -->
+            <h1>We Are An Awesome Creative Agency</h1>
+            <div id="headerborder"></div>
+            <p>
+                At tajam, we believe in our client's vision and our
+                team's ability to conjure that vision into reality. Sit
+                back and relax as our creative wizards ensure that every
+                blippo is the way you want and every glorbo is accounted
+                for. At tajam, we <i>believe</i> in our client's vision.
+            </p>
+            <button>LEARN MORE</button>
+        </header>
+    </div>
+    <main>
+        <!--Our Story and Watch our Story-Kimberly  -->
             <section></section>
             <section></section>
             <!--Expertise and Meet Our Amazing Team-Garrett  -->
@@ -223,11 +222,11 @@
                             <button type="submit">Submit</button>
                         </form>
                     </div>
-                    <div class="happy-customers">
-                        <h2>OUR HAPPY CLIENTS</h2>
-                        <div class="client-logos">
-                            <!-- Add your client logos as <img> elements here -->
-                        </div>
+                    <div class="happy-customers"> <!-- TODO please add an ID to this div so I can link to this section from navbar, thanks! -->
+                      <h2>OUR HAPPY CLIENTS</h2>
+                      <div class="client-logos">
+                        <!-- Add your client logos as <img> elements here -->
+                      </div>
                     </div>
                 </section>
             </section>

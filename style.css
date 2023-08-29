@@ -3,6 +3,14 @@
     src: url("./res/font/roboto.ttf") format("truetype");
 }
 @font-face {
+    font-family: "Roboto Thin"; /* For logo text */
+    src: url("./res/font/roboto-thin.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto Black"; /* For navbar text */
+    src: url("./res/font/roboto-black.ttf") format("truetype");
+}
+@font-face {
     font-family: "PlayfairDisplay Regular"; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
     src: url("./res/font/playfairdisplay-regular.ttf") format("truetype");
 }
@@ -28,54 +36,84 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex; /* Add flex display */
+    flex-flow: column;
+    justify-content: space-between; /* Equal space on the sides */
+    align-items: center; /* Center vertically */
+    padding: 15px 0; /* Add padding for spacing */
+}
+.navcontent {
+    display: flex;
+    align-items: center;
+    /* border: solid 2px aqua; */
 }
 .navlogowrap {
     display: flex;
-    align-items: center; /* TODO Change this to be in the middle */
-    position: fixed;
-    border: solid 2px cyan;
+    align-items: center;
+    margin-right: 20em; /* 150px */
+    /* border: solid 2px magenta; */
 }
 .navlogowrap img {
     max-width: 100px;
-    margin-right: 10px;
 }
 .navlinkwrap {
-    display: inline;
-    border: solid 2px magenta;
+    display:inline;
+    /* border: solid 2px magenta; */
 }
 #nav-gradient-text {
-    font-family: "Roboto";
+    font-family: 'Roboto Thin';
     font-size: 2.5em;
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 600;
     font-size: xx-large;
     padding-left: 20px;
 }
 #navtop {
-    font-family: "Roboto";
-    border: solid 2px green;
+    font-family: 'Roboto Black';
     display: flex;
+}
+#navcurrent a{
+    color: #26dfce;
 }
 #navtop a {
     color: white;
     text-decoration: none;
-    font-weight: bolder;
-    font-size: 1.08em; /* 13pt */
+    font-size: 1.05em; /* 13pt */
+    /* border: solid 2px yellow; */
+    margin: 0 0.6em;
+}
+#navtop a:hover {
+    color: #26dfce;
+}
+#navtop ul {
+    list-style-type: none;
+}
+#navtop ul li {
+    margin-bottom: 10px;
 }
 #headertop {
-    border: solid 2px orange;
+    /* border: solid 2px orange; */
     text-align: center;
     color: white;
+    padding: 10%
 }
 #headertop p {
     font-family: "Roboto";
     font-size: 1.16em; /* 14pt */
+    margin-bottom: 4%;
+    max-width: 55%;
 }
 #headertop h1 {
     font-family: "PlayfairDisplay Black";
     font-size: 2em;
+}
+#headerborder {
+    border-bottom: 2px solid #26dfce;
+    width: 5%;
+    margin: 2% auto;
 }
 #headertop button {
     font-family: "HammersmithOne";
@@ -84,11 +122,11 @@
     background-color: transparent;
     border: solid 1px #26dfce;
     border-radius: 3px;
-    padding: 1%;
+    padding: 0.75% 1.25%;
 }
 body {
     min-height: 100vh;
-    min-width: 200vh;
+    min-width: 200vh; /* FIXME are you sure you want the min width to be 2x the viewport height? */
 }
 
 .section-heading-font {
@@ -321,13 +359,6 @@ button[type="submit"] {
     margin-bottom: 10px;
 }
 
-#navtop ul {
-    list-style-type: none;
-}
-
-#navtop ul li {
-    margin-bottom: 10px;
-}
 
 .our-studio {
     flex: 1;
