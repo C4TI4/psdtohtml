@@ -3,6 +3,10 @@
     src: url("./res/font/roboto.ttf") format("truetype");
 }
 @font-face {
+    font-family: "Roboto Thin"; /* For logo text */
+    src: url("./res/font/roboto-thin.ttf") format("truetype");
+}
+@font-face {
     font-family: "PlayfairDisplay Regular"; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
     src: url("./res/font/playfairdisplay-regular.ttf") format("truetype");
 }
@@ -33,12 +37,12 @@
     flex-flow: column;
     justify-content: space-between; /* Equal space on the sides */
     align-items: center; /* Center vertically */
-    padding: 20px 0; /* Add padding for spacing */
+    padding: 15px 0; /* Add padding for spacing */
 }
 .navcontent {
     display: flex;
     align-items: center;
-    border: solid 2px aqua;
+    /* border: solid 2px aqua; */
 }
 .navlogowrap {
     display: flex;
@@ -51,23 +55,25 @@
 }
 .navlinkwrap {
     display:inline;
-    border: solid 2px magenta;
+    /* border: solid 2px magenta; */
 }
 #nav-gradient-text {
-    font-family: 'Roboto';
+    font-family: 'Roboto Thin';
     font-size: 2.5em;
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 600;
     font-size: xx-large;
-    font-weight: 200;
     padding-left: 20px;
 }
 #navtop {
     font-family: 'Roboto';
-    border: solid 2px green;
     display: flex;
+}
+#navcurrent a{
+    color: #26dfce;
 }
 #navtop a {
     color: white;
@@ -77,6 +83,9 @@
     /* border: solid 2px yellow; */
     margin: 0 0.6em;
 }
+#navtop a:hover {
+    color: #26dfce;
+}
 #navtop ul {
     list-style-type: none;
 }
@@ -84,7 +93,7 @@
     margin-bottom: 10px;
 }
 #headertop {
-    border: solid 2px orange;
+    /* border: solid 2px orange; */
     text-align: center;
     color: white;
     padding: 10%
