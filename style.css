@@ -66,6 +66,7 @@ body {
     min-width: 200vh;
 }
 
+
 .section-heading-font {
     font-family: "PlayfairDisplay Bold";
 }
@@ -85,22 +86,22 @@ body {
     padding: 40px 0;
 }
 #expertise {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .expertise-header {
     text-align: center;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
 }
 .section-title {
     margin-bottom: 0.3em;
 }
 .section-description {
+    font-family: "PlayfairDisplay Regular";
+
     margin-bottom: 0.5em;
 }
 .short-border {
@@ -116,11 +117,11 @@ body {
 }
 
 .expertise-row-1 {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(119, 136, 153, 0.2);
 }
 .expertise-middle {
-    border-right: 1px solid rgba(128, 128, 128, 0.2);
-    border-left: 1px solid rgba(128, 128, 128, 0.2);
+    border-right: 1px solid rgba(119, 136, 153, 0.2);
+    border-left: 1px solid rgba(119, 136, 153, 0.2);
 }
 .expertise-item {
     display: flex;
@@ -212,12 +213,18 @@ body {
     display: inline-block;
 }
 
+@media (max-width: 480px) {
+
+
+
+
 .contact-form {
     flex: 1;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 5px;
     margin-right: 20px;
+
 }
 
 .contact-details {
@@ -275,13 +282,13 @@ button[type="submit"] {
     margin: 10px;
 }
 
-/* Style the footer This section should be updated in Cat's branch, so I'll just leave it commented out for now*/
-/* footer {
+/* Style the footer */
+footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-} */
+}
 
 .footer-section {
     display: flex;
@@ -343,8 +350,6 @@ nav ul li {
     margin-top: 20px;
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
