@@ -22,30 +22,31 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
+    
 }
-.container {
-    position: relative;
-    background-image: url("./res/img/bgk-header.png");
+.navcontainer {
+    background-image: url('./res/img/bgk-header.png');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    /* Add other styling here */
 }
 .navlogowrap {
     display: flex;
     align-items: center; /* TODO Change this to be in the middle */
     position: fixed;
-    top: 0;
-    left: 0;
+    border: solid 2px cyan;
 }
-
 .navlogowrap img {
     max-width: 100px;
     margin-right: 10px;
 }
-
-#gradient-text {
-    font-family: "Roboto";
+.navlinkwrap {
+    display:inline;
+    border: solid 2px magenta;
+}
+#nav-gradient-text {
+    font-family: 'Roboto';
+    font-size: 2.5em;
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
     background-clip: text;
@@ -53,14 +54,39 @@
     font-size: xx-large;
     padding-left: 20px;
 }
-/* nav {
-border: solid 2px green;
+#navtop {
+    font-family: 'Roboto';
+    border: solid 2px green;
+    display: flex;
 }
-header {
-border: solid 2px orange;
-text-align: center;
-color: white;
-} */
+#navtop a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.08em; /* 13pt */
+}
+#headertop {
+    border: solid 2px orange;
+    text-align: center;
+    color: white;
+}
+#headertop p {
+    font-family: 'Roboto';
+    font-size: 1.16em; /* 14pt */
+}
+#headertop h1 {
+    font-family: 'PlayfairDisplay Black';
+    font-size: 2em;
+}
+#headertop button {
+    font-family: 'HammersmithOne';
+    font-size: 1em;
+    color: #26dfce;
+    background-color: transparent;
+    border: solid 1px #26dfce;
+    border-radius: 3px;
+    padding: 1%;
+}
 body {
     min-height: 100vh;
     min-width: 200vh;
@@ -296,11 +322,11 @@ footer {
     margin-bottom: 10px;
 }
 
-nav ul {
+#navtop ul {
     list-style-type: none;
 }
 
-nav ul li {
+#navtop ul li {
     margin-bottom: 10px;
 }
 
@@ -341,6 +367,7 @@ nav ul li {
 
 @media (max-width: 480px) {
 }
+
 
 @media (max-width: 768px) {
 }
