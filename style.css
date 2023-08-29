@@ -87,6 +87,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-image: url(./design-assets/bgk-footer.png);
+    background-size: 100% 100%;
+    margin: 0%;
+    font-family: git;
+
 }
 
 .brand-info {
@@ -142,6 +147,7 @@ nav ul li {
 .copyright {
     margin-top: 20px;
 }
+
 
 @media (max-width: 480px) {}
 
