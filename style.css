@@ -22,10 +22,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
-    
 }
 .navcontainer {
-    background-image: url('./res/img/bgk-header.png');
+    background-image: url("./res/img/bgk-header.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,11 +40,11 @@
     margin-right: 10px;
 }
 .navlinkwrap {
-    display:inline;
+    display: inline;
     border: solid 2px magenta;
 }
 #nav-gradient-text {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 2.5em;
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
@@ -55,7 +54,7 @@
     padding-left: 20px;
 }
 #navtop {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     border: solid 2px green;
     display: flex;
 }
@@ -71,15 +70,15 @@
     color: white;
 }
 #headertop p {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 1.16em; /* 14pt */
 }
 #headertop h1 {
-    font-family: 'PlayfairDisplay Black';
+    font-family: "PlayfairDisplay Black";
     font-size: 2em;
 }
 #headertop button {
-    font-family: 'HammersmithOne';
+    font-family: "HammersmithOne";
     font-size: 1em;
     color: #26dfce;
     background-color: transparent;
@@ -205,7 +204,7 @@ body {
 .member-photo {
     width: 100%;
     height: 70%;
-    background-color: antiquewhite;
+    background-color: white;
 }
 .member-text {
     display: flex;
@@ -227,8 +226,8 @@ body {
     font-family: "HammersmithOne";
     font-weight: lighter;
     text-decoration: none;
-    border: #00e0d0 solid 3px;
-    color: #00e0d0;
+    border: #26dfce solid 3px;
+    color: #26dfce;
     padding: 10px;
     margin-top: 15px;
     display: inline-block;
@@ -297,13 +296,13 @@ button[type="submit"] {
     margin: 10px;
 }
 
-/* Style the footer */
-footer {
+/* Style the footer Cat has updated this in her branch, so I'll leave it commented here for now */
+/* footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-}
+} */
 
 .footer-section {
     display: flex;
@@ -367,7 +366,6 @@ footer {
 
 @media (max-width: 480px) {
 }
-
 
 @media (max-width: 768px) {
 }
