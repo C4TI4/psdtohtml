@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'Roboto'; /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
-    src: url('./res/font/roboto.ttf') format('truetype');
+    font-family: "Roboto"; /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
+    src: url("./res/font/roboto.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'PlayfairDisplay Regular'; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
-    src: url('./res/font/playfairdisplay-regular.ttf') format('truetype');
+    font-family: "PlayfairDisplay Regular"; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
+    src: url("./res/font/playfairdisplay-regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'PlayfairDisplay Black'; /* For header heading */
-    src: url('./res/font/playfairdisplay-black.ttf') format('truetype');
+    font-family: "PlayfairDisplay Black"; /* For header heading */
+    src: url("./res/font/playfairdisplay-black.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'PlayfairDisplay Bold'; /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
-    src: url('./res/font/playfairdisplay-bold.ttf') format('truetype');
+    font-family: "PlayfairDisplay Bold"; /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
+    src: url("./res/font/playfairdisplay-bold.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'HammersmithOne'; /* For button text */
-    src: url('./res/font/hammersmithone-regular.ttf') format('truetype');
+    font-family: "HammersmithOne"; /* For button text */
+    src: url("./res/font/hammersmithone-regular.ttf") format("truetype");
 }
 * {
     box-sizing: border-box;
@@ -41,13 +41,9 @@
     max-width: 100px;
     margin-right: 10px;
 }
-.navlinkwrap {
-    display:inline;
-    border: solid 2px magenta;
-}
-#nav-gradient-text {
+
+#gradient-text {
     font-family: 'Roboto';
-    font-size: 2.5em;
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
     background-clip: text;
@@ -55,45 +51,303 @@
     font-size: xx-large;
     padding-left: 20px;
 }
-#navtop {
-    font-family: 'Roboto';
-    border: solid 2px green;
-    display: flex;
+nav {
+border: solid 2px green;
 }
-#navtop a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 1.08em; /* 13pt */
-}
-#headertop {
-    border: solid 2px orange;
-    text-align: center;
-    color: white;
-}
-#headertop p {
-    font-family: 'Roboto';
-    font-size: 1.16em; /* 14pt */
-}
-#headertop h1 {
-    font-family: 'PlayfairDisplay Black';
-    font-size: 2em;
-}
-#headertop button {
-    font-family: 'HammersmithOne';
-    font-size: 1em;
-    color: #26dfce;
-    background-color: transparent;
-    border: solid 1px #26dfce;
-    border-radius: 3px;
-    padding: 1%;
+header {
+border: solid 2px orange;
+text-align: center;
+color: white;
 }
 body {
     min-height: 100vh;
+    min-width: 200vh;
+}
+
+
+.section-heading-font {
+    font-family: "PlayfairDisplay Bold";
+}
+
+.section-description-font {
+    font-family: "PlayfairDisplay Regular";
+}
+
+.section-text-font {
+    font-family: "Roboto";
+}
+
+#expertise,
+#team {
+    width: 100%;
+    min-height: 80vh;
+    padding: 40px 0;
+}
+#expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expertise-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title {
+    margin-bottom: 0.3em;
+}
+.section-description {
+    font-family: "PlayfairDisplay Regular";
+
+    margin-bottom: 0.5em;
+}
+.short-border {
+    border-bottom: 2px solid lightslategray;
+    width: 15%;
+}
+.expertise-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1rf 1rf;
+    max-width: 60%;
+    /* grid-gap: 40px 60px; */
+}
+
+.expertise-row-1 {
+    border-bottom: 1px solid rgba(119, 136, 153, 0.2);
+}
+.expertise-middle {
+    border-right: 1px solid rgba(119, 136, 153, 0.2);
+    border-left: 1px solid rgba(119, 136, 153, 0.2);
+}
+.expertise-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-family: "Roboto";
+    /* border: 2px solid blue; */
+}
+
+.expertise-icon {
+    /* border: 2px solid; */
+    margin-bottom: 30px;
+}
+
+.expertise-subject {
+    margin-bottom: 1em;
+}
+.expertise-description {
+    color: grey;
+}
+#team {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(./design-assets/bgk-header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: 3%; */
+    color: antiquewhite;
+    font-family: "PlayfairDisplay Bold";
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    min-width: 60%;
+    height: 80%;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 25%;
+    border-left: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+}
+.member-photo {
+    width: 100%;
+    height: 70%;
+    background-color: antiquewhite;
+}
+.member-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.member-job {
+    color: lightslategray;
+}
+
+.team-footer {
+    text-align: center;
+    color: lightslategray;
+}
+#hiring-button {
+    font-family: "HammersmithOne";
+    font-weight: lighter;
+    text-decoration: none;
+    border: #00e0d0 solid 3px;
+    color: #00e0d0;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 @media (max-width: 480px) {
+
+
+
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-right: 20px;
+
 }
 
-@media (max-width: 768px) {
+.contact-details {
+    text-align: left;
 }
+
+.contact-form h2,
+.happy-customers h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.happy-customers {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client-logos img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brand-info {
+    flex: 1;
+    text-align: left;
+}
+
+.brand-info img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+.our-studio {
+    flex: 1;
+    text-align: left;
+}
+
+.stay-in-touch {
+    flex: 1;
+    text-align: left;
+}
+
+.stay-in-touch button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.stay-in-touch .social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stay-in-touch .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {}
