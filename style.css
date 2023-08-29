@@ -453,19 +453,27 @@ button[type="submit"] {
 @media (max-width: 768px) {}
 
 .our-story-wrapper {
-    padding: 40px 0;
+    padding: 50px 0;
+    margin-left: 50px;
 }
 
 .our-story-logo {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    align-items: start;
+    gap: 40px;
+    padding-left: 500px;
 }
 
 .our-story-section h2,
 .our-story-section p {
     margin-bottom: 20px;
     text-align: left;
+    padding-left: 0px;
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .our-story-logo img {
