@@ -1,28 +1,39 @@
 @font-face {
-    font-family: 'Roboto'; /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
+    font-family: 'Roboto';
+    /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
     src: url('./res/font/roboto.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'PlayfairDisplay Regular'; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
+    font-family: 'PlayfairDisplay Regular';
+    /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
     src: url('./res/font/playfairdisplay-regular.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'PlayfairDisplay Black'; /* For header heading */
+    font-family: 'PlayfairDisplay Black';
+    /* For header heading */
     src: url('./res/font/playfairdisplay-black.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'PlayfairDisplay Bold'; /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
+    font-family: 'PlayfairDisplay Bold';
+    /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
     src: url('./res/font/playfairdisplay-bold.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'HammersmithOne'; /* For button text */
+    font-family: 'HammersmithOne';
+    /* For button text */
     src: url('./res/font/hammersmithone-regular.ttf') format('truetype');
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
 }
+
 .container {
     position: relative;
     background-image: url('./res/img/bgk-header.png');
@@ -31,9 +42,11 @@
     background-repeat: no-repeat;
     /* Add other styling here */
 }
+
 .navlogowrap {
     display: flex;
-    align-items: center; /* TODO Change this to be in the middle */
+    align-items: center;
+    /* TODO Change this to be in the middle */
     position: fixed;
     top: 0;
     left: 0;
@@ -53,37 +66,44 @@
     font-size: xx-large;
     padding-left: 20px;
 }
-nav {
-border: solid 2px green;
+
+a {
+    display: flex;
+    flex-direction: row;
+    font-family: url(./res/font/roboto.ttf);
+    text-decoration: none;
 }
+
 header {
-border: solid 2px orange;
-text-align: center;
-color: white;
+    border: solid 2px orange;
+    text-align: center;
+    color: white;
 }
+
 body {
     min-height: 100vh;
     min-width: 200vh;
 }
 
-
-
-
 .contact-form {
+    display: flex;
     flex: 1;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 5px;
     margin-right: 20px;
+
 }
 
 .contact-details {
     text-align: left;
+    width: 50%;
 }
 
 .contact-form h2,
 .happy-customers h2 {
     margin-bottom: 10px;
+    width: 50%
 }
 
 form {
@@ -107,7 +127,7 @@ textarea {
 
 button[type="submit"] {
     background-color: #333;
-    color: #fff;
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -115,8 +135,10 @@ button[type="submit"] {
 }
 
 .happy-customers {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
 }
@@ -124,50 +146,77 @@ button[type="submit"] {
 .client-logos {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%
 }
 
-.client-logos img {
+.client-logos svg {
+    flex-direction: column;
+    display: flex;
     width: 100px;
-    height: auto;
     margin: 10px;
+    height: 15%
 }
 
 /* Style the footer */
-footer {
+.page_footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-.footer-section {
+    font-family: url(./res/font/roboto.ttf);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     background-image: url(./design-assets/bgk-footer.png);
-    background-size: 100% 100%;
-    margin: 0%;
     font-family: git;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
+
 .brand-info {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     text-align: left;
+
 }
 
 .brand-info img {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
+    display: flex;
+
+    align-items: left;
+    font-family: 'Roboto';
+    background: linear-gradient(to right, #00e0d0, #4aa3cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: xx-large;
+    padding-left: 20px;
+
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    margin:
 }
 
 nav ul li {
     margin-bottom: 10px;
+}
+
+.footer_links {
+    display: flex;
+    margin-bottom: 10px;
+    list-style-type: none;
+    flex-direction: row;
 }
 
 .our-studio {
