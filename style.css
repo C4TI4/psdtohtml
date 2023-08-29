@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'Roboto'; /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
-    src: url('./res/font/roboto.ttf') format('truetype');
+    font-family: "Roboto"; /* For navbar txt, header paragraph, "Our Story" paragraph, "watch our story" text, "Expertise" grid headings and text, "Meet Our Amazing Team" grid headings and text, "Become part of our dream team" paragraph, all footer headings and text */
+    src: url("./res/font/roboto.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'PlayfairDisplay Regular'; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
-    src: url('./res/font/playfairdisplay-regular.ttf') format('truetype');
+    font-family: "PlayfairDisplay Regular"; /* For "Expertise" paragraph, "Meet Our Amazing Team" paragraph */
+    src: url("./res/font/playfairdisplay-regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'PlayfairDisplay Black'; /* For header heading */
-    src: url('./res/font/playfairdisplay-black.ttf') format('truetype');
+    font-family: "PlayfairDisplay Black"; /* For header heading */
+    src: url("./res/font/playfairdisplay-black.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'PlayfairDisplay Bold'; /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
-    src: url('./res/font/playfairdisplay-bold.ttf') format('truetype');
+    font-family: "PlayfairDisplay Bold"; /* For "Our Story" heading, "Expertise" heading, "Meet Our Amazing Team" heading, "Give Us Good News" heading, "Our Happy Clients" heading */
+    src: url("./res/font/playfairdisplay-bold.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'HammersmithOne'; /* For button text */
-    src: url('./res/font/hammersmithone-regular.ttf') format('truetype');
+    font-family: "HammersmithOne"; /* For button text */
+    src: url("./res/font/hammersmithone-regular.ttf") format("truetype");
 }
 * {
     box-sizing: border-box;
@@ -25,7 +25,7 @@
 }
 .container {
     position: relative;
-    background-image: url('./res/img/bgk-header.png');
+    background-image: url("./res/img/bgk-header.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 }
 
 #gradient-text {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
     -webkit-background-clip: text;
     background-clip: text;
@@ -53,26 +53,41 @@
     font-size: xx-large;
     padding-left: 20px;
 }
-nav {
+/* nav {
 border: solid 2px green;
 }
 header {
 border: solid 2px orange;
 text-align: center;
 color: white;
-}
+} */
 body {
     min-height: 100vh;
 }
 
+.section-heading-font {
+    font-family: "PlayfairDisplay Bold";
+}
+
+.section-description-font {
+    font-family: "PlayfairDisplay Regular";
+}
+
+.section-text-font {
+    font-family: "Roboto";
+}
+
+#expertise,
+#team {
+    width: 100%;
+    min-height: 80vh;
+    padding: 40px 0;
+}
 #expertise {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    min-height: 80vh;
-    padding: 5% 0;
 }
 
 .expertise-header {
@@ -83,25 +98,36 @@ body {
     margin-bottom: 0.3em;
 }
 .section-description {
+    font-family: "PlayfairDisplay Regular";
+
     margin-bottom: 0.5em;
 }
 .short-border {
-    border-bottom: 2px solid;
-    width: 20%;
+    border-bottom: 2px solid lightslategray;
+    width: 15%;
 }
 .expertise-items-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1rf 1rf;
     max-width: 60%;
-    grid-gap: 40px 60px;
+    /* grid-gap: 40px 60px; */
+}
+
+.expertise-row-1 {
+    border-bottom: 1px solid rgba(119, 136, 153, 0.2);
+}
+.expertise-middle {
+    border-right: 1px solid rgba(119, 136, 153, 0.2);
+    border-left: 1px solid rgba(119, 136, 153, 0.2);
 }
 .expertise-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 0 10px;
+    padding: 30px;
+    font-family: "Roboto";
     /* border: 2px solid blue; */
 }
 
@@ -112,6 +138,9 @@ body {
 
 .expertise-subject {
     margin-bottom: 1em;
+}
+.expertise-description {
+    color: grey;
 }
 #team {
     /* display: flex;
@@ -127,8 +156,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 3%;
+    /* padding-top: 3%; */
     color: antiquewhite;
+    font-family: "PlayfairDisplay Bold";
+    text-align: center;
 }
 
 .team-container {
@@ -144,7 +175,9 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     width: 25%;
-    border: solid 1px;
+    border-left: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
 }
 .member-photo {
     width: 100%;
@@ -159,9 +192,23 @@ body {
     width: 100%;
     height: 30%;
 }
+.member-job {
+    color: lightslategray;
+}
 
 .team-footer {
     text-align: center;
+    color: lightslategray;
+}
+#hiring-button {
+    font-family: "HammersmithOne";
+    font-weight: lighter;
+    text-decoration: none;
+    border: #00e0d0 solid 3px;
+    color: #00e0d0;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 @media (max-width: 480px) {
