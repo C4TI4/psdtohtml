@@ -55,31 +55,31 @@
     font-size: xx-large;
     padding-left: 20px;
 }
-nav {
+#navtop {
     font-family: 'Roboto';
     border: solid 2px green;
     display: flex;
 }
-nav a {
+#navtop a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.08em; /* 13pt */
 }
-header {
+#headertop {
     border: solid 2px orange;
     text-align: center;
     color: white;
 }
-header p {
+#headertop p {
     font-family: 'Roboto';
     font-size: 1.16em; /* 14pt */
 }
-header h1 {
+#headertop h1 {
     font-family: 'PlayfairDisplay Black';
     font-size: 2em;
 }
-header button {
+#headertop button {
     font-family: 'HammersmithOne';
     font-size: 1em;
     color: #26dfce;
