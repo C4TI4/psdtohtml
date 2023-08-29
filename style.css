@@ -83,15 +83,22 @@
     border: solid 2px orange;
     text-align: center;
     color: white;
-    padding: 14%
+    padding: 11%
 }
 #headertop p {
     font-family: 'Roboto';
     font-size: 1.16em; /* 14pt */
+    margin-bottom: 4%;
+    max-width: 50%;
 }
 #headertop h1 {
     font-family: 'PlayfairDisplay Black';
     font-size: 2em;
+}
+#headerborder {
+    border-bottom: 2px solid #26dfce;
+    width: 5%;
+    margin: 2% auto;
 }
 #headertop button {
     font-family: 'HammersmithOne';
@@ -100,7 +107,7 @@
     background-color: transparent;
     border: solid 1px #26dfce;
     border-radius: 3px;
-    padding: 1%;
+    padding: 0.75% 1%;
 }
 body {
     min-height: 100vh;
