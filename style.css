@@ -29,12 +29,20 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex; /* Add flex display */
+    flex-flow: column;
+    justify-content: space-between; /* Equal space on the sides */
+    align-items: center; /* Center vertically */
+    padding: 20px 0; /* Add padding for spacing */
+}
+.navcontent {
+    display: flex;
+    align-items: center;
 }
 .navlogowrap {
     display: flex;
-    align-items: center; /* TODO Change this to be in the middle */
-    position: fixed;
-    border: solid 2px cyan;
+    align-items: center;
+    margin-right: 20px; /* Add margin to separate from links */
 }
 .navlogowrap img {
     max-width: 100px;
@@ -65,10 +73,17 @@
     font-weight: bolder;
     font-size: 1.08em; /* 13pt */
 }
+#navtop ul {
+    list-style-type: none;
+}
+#navtop ul li {
+    margin-bottom: 10px;
+}
 #headertop {
     border: solid 2px orange;
     text-align: center;
     color: white;
+    padding: 14%
 }
 #headertop p {
     font-family: 'Roboto';
@@ -89,7 +104,7 @@
 }
 body {
     min-height: 100vh;
-    min-width: 200vh;
+    min-width: 200vh; /* FIXME are you sure you want the min width to be 2x the viewport height? */
 }
 
 .section-heading-font {
@@ -326,13 +341,6 @@ footer {
     margin-bottom: 10px;
 }
 
-#navtop ul {
-    list-style-type: none;
-}
-
-#navtop ul li {
-    margin-bottom: 10px;
-}
 
 .our-studio {
     flex: 1;
