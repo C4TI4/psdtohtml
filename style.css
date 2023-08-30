@@ -460,15 +460,33 @@ button[type="submit"] {
 .our-story-logo {
     display: flex;
     align-items: start;
-    gap: 40px;
-    padding-left: 500px;
+    gap: 0px;
+    justify-content: flex-start;
+    padding-left: 10px;
 }
 
-.our-story-section h2,
-.our-story-section p {
+.our-story-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: -400px;
+}
+
+.our-story-section h2 {
     margin-bottom: 20px;
+    margin-top: 20px;
     text-align: left;
-    padding-left: 0px;
+    font-family: "Robotto";
+    margin-left: 0;
+
+}
+
+.our-story-section p {
+    font-family: "PlayfairDisplay Bold";
+    color: slategray;
+    text-align: left;
+    font-size: 11px;
+
 }
 
 .centered-text {
@@ -477,8 +495,7 @@ button[type="submit"] {
 }
 
 .our-story-logo img {
-    margin-right: 10px;
-    width: 150px;
+    width: 300px;
     height: auto;
 }
 
@@ -492,6 +509,7 @@ button[type="submit"] {
     padding: 15px 30px;
     text-transform: none;
     white-space: nowrap;
+    align-self: flex-start;
 }
 
 .video-section {
@@ -522,7 +540,7 @@ button[type="submit"] {
 }
 
 .play-logo img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 
@@ -531,5 +549,6 @@ button[type="submit"] {
     margin-top: 20px;
     text-align: center;
     font-size: 10px;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: "Roboto";
 }
