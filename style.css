@@ -333,21 +333,23 @@ main {
 .contact-form {
     display: flex;
     flex: 1;
+    justify-content: center;
     background-color: white;
     border-radius: 5px;
     margin: 40px auto 0 auto;
     /* border: solid 2px magenta; */
-    width: 70%
+    width: 72%
 }
 
 .contactdummy {
-    margin: auto 5%;
+    margin: auto 4%;
 }
 
 .contact-details {
     font-family: 'PlayfairDisplay Bold';
     text-align: left;
-    width: 45%;
+    margin: 0 72px;
+    width: 40%;
     /* border: solid 2px red; */
 }
 
@@ -365,11 +367,12 @@ label {
 input[type='text'],
 input[type='email'],
 textarea {
-    font-family: 'Roboto Light';
+    font-family: 'Roboto';
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    resize: none;
 
 }
 
@@ -394,6 +397,8 @@ button[type='submit'] {
     border-radius: 5px;
     /* border: solid 2px lime; */
 }
+
+
 
 .contact-details h2 {
     text-align: left;
@@ -427,6 +432,7 @@ button[type='submit'] {
     padding: 5% 18%;
     font-family: 'Roboto';
     background-image: url('./design-assets/bgk-footer.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -476,7 +482,6 @@ button[type='submit'] {
     justify-content: space-between;
     text-align: left;
     width: 33%;
-    border: solid 2px aqua;
 }
 
 .brand-info h2 {
@@ -515,7 +520,6 @@ nav ul li {
     align-items: center;
     margin: 0;
     width: fit-content;
-    border: solid 2px lime;
     margin-top: 30px;
 }
 
@@ -531,7 +535,6 @@ nav ul li {
 }
 
 .our-studio {
-    border: solid orange;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -585,7 +588,6 @@ nav ul li {
     justify-content: space-evenly;
     gap: 40px;
     align-items: flex-start;
-    border: solid 2px aquamarine;
     margin-left: 0;
     padding-left: 0;
 }
