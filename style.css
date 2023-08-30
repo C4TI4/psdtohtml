@@ -49,8 +49,10 @@
 .navcontainer {
     background-image: url("./res/img/bgk-header.png");
     background-size: 100%;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     /* Add flex display */
     flex-flow: column;
