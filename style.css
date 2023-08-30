@@ -46,6 +46,14 @@
     margin: 0 auto;
 }
 
+html {
+    max-width: 100vw;
+}
+
+main {
+    margin-bottom: 5%;
+}
+
 .navcontainer {
     background-image: url('./res/img/bgk-header.png');
     background-size: 100%;
@@ -163,12 +171,6 @@
     border: solid 1px #26dfce;
     border-radius: 3px;
     padding: 0.75% 1.25%;
-}
-
-body {
-    min-height: 100vh;
-    min-width: 200vh;
-    /* FIXME are you sure you want the min width to be 2x the viewport height? */
 }
 
 .section-heading-font {
@@ -317,10 +319,12 @@ body {
 
 #hiring-button {
     font-family: 'HammersmithOne';
-    font-weight: lighter;
-    text-decoration: none;
-    border: #26dfce solid 3px;
+    font-size: 1em;
     color: #26dfce;
+    background-color: transparent;
+    border: solid 1px #26dfce;
+    border-radius: 3px;
+    text-decoration: none;
     padding: 10px;
     margin-top: 15px;
     display: inline-block;
@@ -329,26 +333,28 @@ body {
 .contact-form {
     display: flex;
     flex: 1;
-    padding: 20px;
     background-color: white;
     border-radius: 5px;
-    margin-right: 20px;
+    margin: 40px auto 0 auto;
+    /* border: solid 2px magenta; */
+    width: 70%
+}
+
+.contactdummy {
+    margin: auto 5%;
 }
 
 .contact-details {
+    font-family: 'PlayfairDisplay Bold';
     text-align: left;
-    width: 50%;
-}
-
-.contact-form h2,
-.happy-customers h2 {
-    margin-bottom: 10px;
-    width: 50%;
+    width: 45%;
+    /* border: solid 2px red; */
 }
 
 form {
     display: flex;
     flex-direction: column;
+    /* border: solid 2px yellow; */
 }
 
 label {
@@ -359,78 +365,129 @@ label {
 input[type='text'],
 input[type='email'],
 textarea {
+    font-family: 'Roboto Light';
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+
 }
 
 button[type='submit'] {
-    background-color: #333;
-    color: white;
-    border: none;
+    font-family: 'HammersmithOne';
+    font-size: 1em;
+    color: #26dfce;
+    background-color: transparent;
+    border: solid 1px #26dfce;
+    border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer;
-    align-self: flex-start;
+    margin: 2% 72% 0 0;
 }
 
 .happy-customers {
+    font-family: 'PlayfairDisplay Bold';
     display: flex;
     flex-direction: column;
     flex: 1;
     background-color: white;
-    padding: 20px;
     border-radius: 5px;
+    /* border: solid 2px lime; */
+}
+
+.contact-details h2 {
+    text-align: left;
+}
+
+.happy-customers h2 {
+    margin: 0 0 0 10px;
 }
 
 .client-logos {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
+    margin: auto 10% auto 0;
+    /* width: 50%; */
 }
 
-.client-logos svg {
+.client-logos img {
     flex-direction: column;
     display: flex;
     width: 100px;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     height: 15%;
 }
 
 /* Style the footer */
 .page_footer {
+    display: flex;
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-family: url('./res/font/roboto.ttf');
+    padding: 5% 18%;
+    font-family: 'Roboto';
+    background-image: url('./design-assets/bgk-footer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-image: url('./design-assets/bgk-footer.png');
-    font-family: git;
+    font-family: 'Roboto';
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0;
+
+}
+
+.footerlogowrap {
+    display: flex;
+    align-items: center;
+    margin-right: 20em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#about-brand {
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+
+
+#footer-gradient-text {
+    font-family: 'Roboto Thin';
+    font-size: 2.5em;
+    background: linear-gradient(to right, #00e0d0, #4aa3cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 500;
+    font-size: xx-large;
+    padding-left: 20px;
+    vertical-align: middle;
 }
 
 .brand-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: left;
+    width: 33%;
+    border: solid 2px aqua;
+}
+
+.brand-info h2 {
+    text-align: left;
+    padding-top: 0px;
 }
 
 .brand-info img {
-    width: 100px;
+    width: 66px;
     height: auto;
-    margin-bottom: 10px;
     display: flex;
-
     align-items: left;
     font-family: 'Roboto';
     background: linear-gradient(to right, #00e0d0, #4aa3cc);
@@ -451,51 +508,149 @@ nav ul li {
     margin-bottom: 10px;
 }
 
-.footer_links {
+#footer_help {
     display: flex;
-    margin-bottom: 10px;
-    list-style-type: none;
     flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    width: fit-content;
+    border: solid 2px lime;
+    margin-top: 30px;
+}
+
+.footer_help ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#footer_help>div>ul>li {
+    list-style: none;
+    padding: 10px;
 }
 
 .our-studio {
+    border: solid orange;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
     flex: 1;
     text-align: left;
+    margin-bottom: 0px;
+    max-width: 33%;
+    gap: 40px;
+}
+
+.our-studio h3 {
+    margin: 18px 0 0 30px;
+    text-align: left;
+
+}
+
+.address,
+.address p {
+    margin: 0;
+    display: flex;
+    /* border: purple 2px solid; */
+    align-items: flex-start;
+}
+
+.address img {
+    margin: 0 0 0 30px;
+    padding-right: 5%;
+}
+
+.phone,
+.phone img,
+.phone p {
+    margin: 0;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0 0 auto 0;
+    /* border: solid 2px yellow; */
+}
+
+.phone img {
+    margin: 0 0 0 30px;
 }
 
 .stay-in-touch {
     flex: 1;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: flex-start;
+    border: solid 2px aquamarine;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.stay-in-touch h3 {
+    margin: 18px 0px 0px 30px;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .stay-in-touch button {
-    background-color: #333;
-    color: #fff;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.5;
     border: none;
     padding: 10px 20px;
-    margin-bottom: 10px;
+    margin: 10px 0px 00px 30px;
     cursor: pointer;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 0;
+
+}
+
+.subscribe input {
+    background: transparent;
+    color: white;
+
+
+}
+
+.subscribe button {
+    margin-left: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 36.5px;
+    padding: 0;
+    margin-right: 30px;
 }
 
 .stay-in-touch .social-media {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    margin: 0px 0px 0px 30px;
+    align-self: flex-start;
 }
 
-.stay-in-touch .social-media a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0 10px;
+.social-media img {
+    margin-right: 3px;
 }
 
 .copyright {
     margin-top: 20px;
+    margin-left: 80px;
 }
 
-@media (max-width: 480px) {}
-
-@media (max-width: 768px) {}
+/* ////////////////////// Garrett //////////////////// */
 
 .our-story-wrapper {
     padding: 50px 0;
@@ -578,3 +733,7 @@ nav ul li {
     font-size: 10px;
     font-weight: bold;
 }
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {}
