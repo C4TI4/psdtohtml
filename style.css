@@ -661,92 +661,6 @@ nav ul li {
 .our-story-logo {
     display: flex;
     align-items: start;
-    gap: 40px;
-    padding-left: 500px;
-}
-
-.our-story-section h2,
-.our-story-section p {
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 0px;
-}
-
-.centered-text {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.our-story-logo img {
-    margin-right: 10px;
-    width: 150px;
-    height: auto;
-}
-
-.custom-btn {
-    font-family: 'HammersmithOne';
-    font-size: 1em;
-    color: #26dfce;
-    background-color: transparent;
-    border: solid 1px #26dfce;
-    border-radius: 3px;
-    padding: 15px 30px;
-    text-transform: none;
-    white-space: nowrap;
-}
-
-.video-section {
-    background-image: url(design-assets/bgk-middle.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-}
-
-.video-placeholder {
-    position: relative;
-    height: 350px;
-}
-
-.video-placeholder img {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
-}
-
-.play-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.play-logo img {
-    width: 50px;
-    height: auto;
-}
-
-.play-logo h3 {
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-}
-
-@media (max-width: 480px) {}
-
-@media (max-width: 768px) {}
-
-.our-story-wrapper {
-    padding: 50px 0;
-    margin-left: 50px;
-}
-
-.our-story-logo {
-    display: flex;
-    align-items: start;
     gap: 0px;
     justify-content: flex-start;
     padding-left: 10px;
@@ -839,3 +753,7 @@ nav ul li {
     font-size: 16px;
     font-family: "Roboto";
 }
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {}
