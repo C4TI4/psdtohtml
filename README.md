@@ -1,6 +1,7 @@
 # Code Beasts 💪🏼🐉
 Welcome to the WD#043 group project for week 1 of the bootcamp *!*
-If you are just looking for the webpage instead of the repo, feel free to visit it anytime [here!](https://c4ti4.github.io/psdtohtml/ "Deployed version of the project")
+If you are just looking for the webpage instead of the repo, feel free to visit it anytime [here!](https://c4ti4.github.io/psdtohtml/ "Deployed version of the project") <br>
+The Trello board for the project can be found [here](https://trello.com/b/7iZdizmL/psd-into-webpage "Project's Trello board")
 
 ### What is this project?
 This is a group project for the Web & App Development bootcamp WD#043 led by the one and only coach Lilian *!*
